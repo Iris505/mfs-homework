@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>题一</title>
+</head>
+<body>
+        <form action="/getInfo" mathod="post">
+            <div>
+                姓名：<input name="name" plaseholder="王小明" autofocus />
+            </div>
+            <div>
+                就读院校：<input list="iniversity" name="university">
+                <datalist id="university">
+                    <option value="CQU" label="重庆大学">
+                    <option value="PKU">
+                    <option value="MIT">
+                </datalist>
+            </div>
+            <div>
+                邮箱：<input name="email" type="email" />
+            </div>
+            <div>
+                网址：<input name="url" type="url" />
+            </div>
+            <div>
+                学号：<input name="number" type="number" min="20170000" max="2017700" />
+            </div>
+            <div>
+                平均分：<input name="range" type="range" />
+            </div>
+            <div>
+                提交日期：<input name="date" type="date" />
+            </div>
+            <div>
+                提交时间：<input name="time" type="time" />
+            </div>
+            <div>
+                选色：<input name="color" type="color" />
+            </div>
+            <div>
+                日期时间：<input name="datatime" type="datetime" />
+            </div>
+            <div>
+                月：<input name="mouth" type="month" />
+            </div>
+            <div>
+                周：<input name="week" type="week" />
+            </div>
+            <div>
+                搜索：<input name="search" type="search" />
+            </div>
+            <div>
+                <button>提交</button>
+            </div>
+        </form>
+</body>
+</html>
