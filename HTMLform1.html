@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>表单一</title>
+</head>
+<body>
+    <form action="/getInfo" mathod="get">
+        <div>
+            <label for="">用户名：</label>
+            <input type="text" name="username" />
+        </div>
+        <div>
+            <label for="">密码&nbsp;&nbsp;&nbsp;&nbsp;：</label>
+            <input type="password" name="password" />
+        </div>
+        <div>
+            <label for="" name="sex">性选择别：</label>
+            <input type="radio" name="sex" value="0">男
+            <input type="radio" name="sex" value="1">女
+        </div>
+        <div>
+            <label for="">技能：</label>
+            <input type="checkbox" name="skill" value="HTML" />HTML
+            <input type="checkbox" name="skill" value="CSS" />CSS
+            <input type="checkbox" name="skill" value="Javascript" />Javascript
+        </div>
+        <div>
+            <label for="">所在城市：</label>
+            <select name="city" value="bj">
+                <option value="bj">北京</option>
+                <option value="sh">上海</option>
+                <option value="sz">深圳</option>
+            </select>
+        </div>
+        <div>
+            <button>提交</button>
+            <button type="reset">重置</button>        
+        </div>
+    </form>
+</body>
+</html>
