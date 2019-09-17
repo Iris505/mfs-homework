@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        button {
+            /*消除button的默认样式*/
+            margin: 0;
+            padding: 0;
+            border: 1px solid transparent;  /*自定义边框*/
+            outline: none;    /*消除默认点击蓝色边框效果*/
+            height: 65px;
+            width: 200px;
+            /* 借用一下百度百科的素材:) */
+            background-image: url(https://gss3.bdstatic.com/7Po3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268/sign=ca0658873901213fcf3349da6ce736f8/5fdf8db1cb1349544e35843a564e9258d1094a40.jpg);
+            background-position: -1px -1px;
+        }
+        button:hover{
+            background-position: -1px -66px; /*修改hover下的position使其显示效果不同*/
+        }
+    </style>
+</head>
+<body>
+    <button></button>
+</body>
+</html>
