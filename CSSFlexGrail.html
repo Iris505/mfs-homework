@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 20vh;
+            min-width: 600px;
+            text-align: center;
+        }
+        header,footer{
+            background: rgb(156, 156, 156);
+        }
+        .container{
+            flex: 1;
+            justify-content: space-between;
+            display: flex;
+        }
+        .container>.left{
+            order: -1;
+            flex: 0 0 200px;
+            background: rgb(127, 173, 216);
+        }
+        .container>.main{
+            flex: 1;
+            background: rgb(44, 99, 155);
+        }
+        .container>.right{
+            flex: 0 0 150px;
+            background: rgb(127, 173, 216);
+        }
+    </style>
+</head>
+<body>
+    <header>头部</header>
+    <div class="container">
+        <main class="main">
+            主内容栏自适应宽度
+        </main>
+        <nav class="left">
+            侧边栏1固定宽度
+        </nav>
+        <aside class="right">
+            侧边栏2固定宽度
+        </aside>
+    </div>
+    <footer>底部</footer>
+</body>
+</html>
