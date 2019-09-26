@@ -1,0 +1,323 @@
+body{
+    margin: 0
+}
+*{
+    box-sizing: border-box;
+}
+.link{
+    text-decoration: none;
+}
+.link.top{
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    position: fixed;
+    right: 10px;
+    bottom: 10px; 
+    background-color: rgba(244,100,95,.6);
+    border: 1px solid rgba(244,100,95,0);
+    border-radius: 2px;
+}
+.link.top:hover{
+    background-color: #f4645f;
+    border: 1px solid rgba(244,100,95,.6);
+}
+
+.header-main{
+    padding: 31px 0;
+    background-image: url(https://www.golaravel.com/assets/images/header-bg.jpg);
+    background-origin: padding-box;
+    background-repeat: no-repeat;
+    background-position: center 20%;
+    background-size: cover;
+}
+.header-main svg{   
+    height: 11%;
+    width: 11%;
+    margin: 25px 0;
+}
+.header-main h1{
+    color: white;
+    text-align: center;
+    font-weight: 400;
+    font-size: 30px;
+    margin-bottom:45px;
+}
+.btn-doc{
+    text-decoration: none;
+    color: white;
+    background-color: #f4645f;
+    border: 1px solid #f4645f;
+    border-radius: 2px;
+    padding: 7px 14px;
+    font-size: 14px;
+    line-height: 1.42857143em;
+}
+.btn-doc:hover{
+    background: black;
+    border: 1px solid black;
+}
+/*导航栏*/
+.nav{
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid #e1e1e1;
+    padding: 0 120px;
+}
+.nav .link{
+    color: #505050;
+    margin: 20px 21px;
+    font-size: 14px;
+}
+.nav .link:hover{
+    color: #f4645f;
+}
+.main{
+    background: #ebebeb;
+    padding: 40px 0;
+}
+
+.container{
+    width: 87%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+}
+/*内容样式*/
+.content{
+    width: 67%;
+    font-size: 14px;
+}
+.content .post{
+    background: white;
+    margin-bottom: 35px;
+    padding:35px;
+    overflow: hidden;
+}
+.content .doc-link{
+    text-decoration: none;
+    color: #f4645f;
+}
+/*内容头中的样式*/
+.post-title .link{
+    color: #303030;
+    text-decoration: none;
+    font-size: 27px;
+    font-weight: 400;
+}
+.post-head{
+    text-align: center;
+}
+.post-meta{
+    color: #959595;
+    margin-top: 14px;
+}
+.post-meta .author{
+    margin: 0 7px;
+}
+/*内容中的图片媒体样式*/
+.content .post .featured-media{
+    margin-top: 30px;
+}
+.content .post .featured-media img{
+    width: 100%;
+    vertical-align: middle;
+}
+/*内容正文样式*/
+.post-content{
+    font: 400 18px/1.62 Georgia,Xin Gothic,Hiragino Sans GB,Droid Sans Fallback,Microsoft YaHei,sans-serif;
+    color: #444443;
+}
+.post .post-content{
+    margin: 30px 0;
+}
+.post .post-content p{
+    margin-bottom: 26px;
+}
+/*清除浮动*/
+.clearfix:after{
+    content: "";
+    display: block;
+    clear: both;   
+}
+/*报文页脚*/
+.post-footer{
+    border-top: 1px solid #ebebeb;
+    margin-top: 30px;
+    padding-top: 21px;
+}
+
+/*页导航*/
+.pagination{
+    margin-bottom: 35px;
+    text-align: center;
+}
+.pagination .page-container{
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+.page-number{
+    line-height: 36px;
+    color: #fff;
+    background-color: #f4645f;
+    border: 1px solid #f4645f;
+    border-radius: 2px;
+    padding: 8px 14px;
+    margin: 0 3px;
+}
+.older-posts{
+    display: inline-block;
+    height: 36.5px;
+    width: 36px;
+    line-height: 30px;
+    color: #fff;
+    background-color: #f4645f;
+    border: 1px solid #f4645f;
+    border-radius: 2px;
+    padding: 3px 0;
+    margin: 0 3px;
+}
+/*侧边栏*/
+.aside{
+    width: 30%;
+    font-size: 14px;
+}
+.aside .widget{
+    background: white;
+    margin-bottom: 30px;
+    padding: 20px;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.widget .btn-doc{
+    margin-top: 5px;
+    text-align: center;
+}
+
+.widget .title{
+    font-size: 20px;
+    margin: 0;
+    font-weight: 400;
+    border-bottom: 1px solid #ebebeb;
+    padding-bottom: 7px;
+    margin-bottom: 21px;
+    position: relative;
+}
+.widget .title:after{
+    content:" ";
+    display: block;
+    width: 100px;
+    border-bottom: 1px solid #f4645f;
+    position: absolute;
+    bottom: -1px;
+}
+
+/*页脚*/
+.footer{
+    background: #202020;
+    padding: 35px 0 0;
+    color: #505050;
+}
+.footer .container{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-widget{
+    width: 31%;
+    font-size:14px;
+    padding: 0 30px;
+    margin-bottom: 35px;
+}
+/*页脚标题样式*/
+.footer-widget .title{
+    font-size: 20px;
+    color: #fff;
+    margin: 0;
+    font-weight: 400;
+    border-bottom: 1px solid #303030;
+    padding-bottom: 7px;
+    margin-bottom: 21px;
+    position: relative;
+}
+.footer-widget .title:after{
+    content:" ";
+    display: block;
+    width: 100px;
+    border-bottom: 1px solid #f4645f;
+    position: absolute;
+    bottom: -1px;
+}
+/*页脚内容样式*/
+.footer-content{
+    line-height: 1.5em;
+    font-family: Helvetica Neue,Helvetica,Arial,Hiragino Sans GB,Hiragino Sans GB W3,WenQuanYi Micro Hei,Microsoft YaHei UI,Microsoft YaHei,sans-serif;
+    border-bottom: 1px dashed #303030;
+    padding-bottom: 14px;
+    margin-bottom: 14px;
+    line-height: 24.5px;
+}
+.footer-content .link{
+    color: #959595;
+}
+.footer-content .link:hover{
+    color: #f4645f;
+}
+/*页脚的按钮*/
+.btn-footer{
+    color: #959595;
+    padding: 2px 7px;
+    margin: 0 7px 7px 0;
+}
+.btn-footer:hover{
+    background-color: #f4645f;
+    color: #fff;
+}
+/*中间tag按钮*/
+.tag-cloud .btn-footer{
+    border: 1px solid #303030;
+}
+.tag-cloud .btn-footer:hover{
+    border: 1px solid #f4645f;
+}
+/*右边按钮*/
+.friends-link{
+    line-height: 1.5em;
+    font-family: Helvetica Neue,Helvetica,Arial,Hiragino Sans GB,Hiragino Sans GB W3,WenQuanYi Micro Hei,Microsoft YaHei UI,Microsoft YaHei,sans-serif;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+.friends-link hr{
+    width:100%;
+    flex-grow: 12;
+    margin: 14px 0;
+    border: 0;
+    border-top: 1px dashed #303030
+}
+
+/*copyright样式*/
+.copyright{
+    background: #111;
+    font-size: 13px;
+    text-align: center;
+    color: #555;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    border-top: 1px solid #303030;
+    line-height: 24.5px;
+}
+.copyright span{
+    margin: 0 6.5px;
+}
+.copyright .link{
+    color: #555;
+}
