@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>标题</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            margin: 100px 0;
+            display: flex;
+            justify-content: center;
+        }
+        .title{
+            padding: 20px 30px;
+            border: 1px solid black;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            min-width: 220px;
+        }
+        .egTitle{
+            font-size: 12px;
+        }
+        .cnTitle{
+            font-size: 28px;
+            margin-top: 8px;
+        }
+        .title:before{
+            content: " ";
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            display: block;
+            background-color: #ffea00;
+            z-index: 1;
+            border-radius: 50%;
+            left: -20px;
+            top: 30px;
+        }
+        .title:after{
+            content: " ";
+            width: 0;
+            height: 0;
+            position: absolute;
+            display: block;
+            z-index: 1;
+            border: 20px solid transparent;
+            border-right: 20px solid #ffea00;
+            top: -15px;
+            right: 20px;
+            transform: rotate(-16deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <span class="egTitle">SHARED COURSE</span>
+            <span class="cnTitle">课程分享</span>
+        </div>
+    </div>
+</body>
+</html>
