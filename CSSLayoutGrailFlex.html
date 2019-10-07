@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flex</title>
+    <style>
+        #bd{
+            display: flex;
+        }
+        .main{
+            flex-grow: 1;
+            background-color: #e7e7e7;
+        }
+        .sub,.extra{
+            background-color: #d3d3d3;
+        }
+        .sub{
+            width: 190px;
+            order: -1;
+        }
+        .extra{
+            width: 230px;
+        }
+    </style>
+</head>
+<body>
+    <div id="bd">         
+        <div class="main">main</div>        
+        <div class="sub">sub</div>        
+        <div class="extra">extra</div>  
+    </div>
+</body>
+</html>
