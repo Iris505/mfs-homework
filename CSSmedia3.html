@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Bootstrap 实例 - 默认的导航栏</title>
     <style>
         *{
             margin: 0;
@@ -112,6 +112,36 @@
             margin: 9px 0;
             overflow: hidden;
             background-color: #e5e5e5;
+        }
+        @media only screen and (max-width: 768px) {
+            .container-fluid{
+                flex-direction: column;
+            }
+            .navbar-nav{
+                flex-direction: column;
+                margin-left: -15px;
+            }
+            .navbar-nav>li{
+                width: 100%;
+                padding: 10px 15px;
+            }
+            .navbar-header{
+                width:100%;
+            }
+            .dropdown-toggle{
+                width: 100%;
+            }
+            .dropdown-toggle:focus+ul{
+                width: 100%;
+                position: static;
+                display: flex;
+                flex-direction: column;
+                border: none;
+                background-color: #f8f8f8;
+            }
+            .dropdown-toggle:focus+ul>li>a{
+                color: #777;
+            }
         }
     </style>
 </head>
