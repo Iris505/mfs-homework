@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var ul=document.createElement("ul");//创建ul节点            
+        document.body.appendChild(ul);//将ul节点加到body             
+        var a,b;            
+        a=new Array("码蜂社","前端","教程");
+        for(b=0;b<=2;b++){                
+            var li=document.createElement("li");  //创建li节点                
+            var text=document.createTextNode(a[b]);  //创建文本节点                
+            li.appendChild(text);  //为li追加文本节点                
+            ul.appendChild(li);  //将li加入ul            
+            }
+    </script>
+</body>
+</html>
