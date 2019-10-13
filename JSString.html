@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input id = "value" autofocus = "autofocus" placeholder="请输入文件名或者英文语句" />
+    <button onclick="returnSuffix()">返回文件后缀名</button>
+    <button onclick="returnCapWord()">将首字母大写</button>
+    <script>
+        function getSuffix(file){
+        return file.slice(file.lastIndexOf(".") + 1,file.length); 
+        }
+        function returnSuffix(){
+            var valInput=document.getElementById('value').value;
+            var result=getSuffix(valInput);
+            document.getElementById('value').value = result;
+        }
+        function capitalize(s){
+            return s.toLowerCase().split(/\s+/).map(function(item, index) {  
+                return item.slice(0, 1).toUpperCase() + item.slice(1);  
+            }).join(' ');
+        }
+        function returnCapWord(){
+            var valInput=document.getElementById('value').value;
+            var result=capitalize(valInput);
+            document.getElementById('value').value = result;
+        }
+    </script>
+</body>
+</html>
