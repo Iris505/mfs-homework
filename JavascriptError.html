@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>test</title>
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+</head>
+<body>
+    <input id="test">
+    <button type="button" onclick="fun()">检测输入</button>
+    <script>
+        function fun(){
+            var testval = $('#test').val();
+            var x;
+            try{
+                if(testval >= 10) throw "输入的值太大";
+            }catch(err){
+                console.log(err);
+            }
+        }
+        function asyncTask(){
+        setTimeout(function(){
+            try{
+                throw new Error("An error");
+            }catch(e){
+                console.log(e);
+            }
+        
+        },1000)
+        }
+        asyncTask()
+    </script>
+</body>
+</html>
